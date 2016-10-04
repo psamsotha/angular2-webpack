@@ -31,6 +31,16 @@ module.exports = {
         test: /\.css$/,
         include: root('src'),
         loader: 'raw'
+      },
+      {
+        test: /\.scss$/,
+        exclude: root('src'),
+        loader: 'null'
+      },
+      {
+        test: /\.scss$/,
+        include: root('src'),
+        loader: 'raw!postcss!sass'
       }
     ]
   }
