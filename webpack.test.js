@@ -23,6 +23,10 @@ module.exports = {
         loader: 'null'
       },
       {
+        test: /\.json$/,
+        loader: 'json'
+      },
+      {
         test: /\.css$/,
         exclude: root('src'),
         loader: 'null'
